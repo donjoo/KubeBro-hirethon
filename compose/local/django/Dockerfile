@@ -13,8 +13,8 @@ WORKDIR ${APP_HOME}
 RUN addgroup --system django \
     && adduser --system --ingroup django django
 
-COPY ./requirements .
-RUN pip install -r ${BUILD_ENVIRONMENT}.txt
+COPY ./backend/requirements ./requirements
+RUN pip install -r requirements/${BUILD_ENVIRONMENT}.txt
 
 # copy application code to WORKDIR
 COPY --chown=django:django . ${APP_HOME}

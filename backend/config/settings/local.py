@@ -70,3 +70,16 @@ ADMIN_INDEX_TITLE = "Welcome to {} Admin Portal (Development)".format("hirethon_
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+# Allow Vite dev server and docker host for CORS/CSRF during local development
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://0.0.0.0:5173",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://0.0.0.0:5173",
+]
