@@ -84,10 +84,12 @@ THIRD_PARTY_APPS = [
     "drf_spectacular",
     "dj_rest_auth",
     "dj_rest_auth.registration",
+    "django_filters",
 ]
 
 LOCAL_APPS = [
     "hirethon_template.users",
+    "hirethon_template.tickets",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
